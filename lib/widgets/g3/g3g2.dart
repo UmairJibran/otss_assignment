@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class G3G2 extends StatelessWidget {
   @override
@@ -8,14 +9,19 @@ class G3G2 extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 0.15,
       child: Column(
         children: [
-          Image.asset("lib/assets/g3p2.PNG"),
+          SvgPicture.asset(
+            "lib/assets/g3p2.svg",
+            height: 50,
+            color: Colors.teal[600],
+          ),
           SizedBox(height: 10),
           AutoSizeText(
             "Containers on Road",
             style: TextStyle(
-              fontSize: 12,
               color: Colors.teal[600],
             ),
+            minFontSize: 8.0,
+            maxFontSize: 10.0,
           ),
           SizedBox(height: 5),
           AutoSizeText(

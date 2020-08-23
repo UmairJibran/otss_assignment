@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'grid_template.dart';
 
 class ContainersReturnedWaitingToReach extends StatelessWidget {
@@ -10,7 +11,11 @@ class ContainersReturnedWaitingToReach extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset("lib/assets/g6p1.PNG"),
+          SvgPicture.asset(
+            "lib/assets/g6p1.svg",
+            height: 50,
+            color: Colors.teal[600],
+          ),
           SizedBox(height: 10),
           AutoSizeText(
             "Containers Returned waiting to Reach",
