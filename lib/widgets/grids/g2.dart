@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:otss_assignment/widgets/grid_template.dart';
 
-import 'g2/g2g1.dart';
-import 'g2/g2g2.dart';
-import 'g2/g2g3.dart';
+import '../grids/g2/g2g1.dart';
+import '../grids/g2/g2g2.dart';
+import '../grids/g2/g2g3.dart';
 
 class ContainersAtPort extends StatelessWidget {
   @override

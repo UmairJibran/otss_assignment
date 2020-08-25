@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:otss_assignment/widgets/grid_template.dart';
 
-import 'g3/g3g1.dart';
-import 'g3/g3g2.dart';
+import '../grids/g3/g3g1.dart';
+import '../grids/g3/g3g2.dart';
 
 class WarehouseAndRoad extends StatelessWidget {
   @override
