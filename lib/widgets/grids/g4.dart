@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:otss_assignment/data/amount.dart';
 import '../grid_template.dart';
 
 class ContainersArrivedAndWaitingForOffloading extends StatelessWidget {
@@ -27,17 +28,17 @@ class ContainersArrivedAndWaitingForOffloading extends StatelessWidget {
             minFontSize: 6,
           ),
           SizedBox(height: 5),
-          Text(
-            "20",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.teal[600],
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          // Text(
+          //   "20",
+          //   style: TextStyle(
+          //     fontSize: 20,
+          //     color: Colors.teal[600],
+          //     fontWeight: FontWeight.bold,
+          //   ),
+          // ),
           SizedBox(height: 5),
           Text(
-            "1285 Tons",
+            '${amount["caff"]} Tons',
             style: TextStyle(
               fontSize: 12,
               color: Colors.teal[600],

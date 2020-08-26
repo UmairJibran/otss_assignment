@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../data/dummy.dart';
+import '../data/grids.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

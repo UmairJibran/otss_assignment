@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:otss_assignment/data/amount.dart';
 import '../grid_template.dart';
 
 class ContainersReturnedWaitingToReach extends StatelessWidget {
@@ -28,7 +29,7 @@ class ContainersReturnedWaitingToReach extends StatelessWidget {
           ),
           SizedBox(height: 5),
           Text(
-            "114",
+            '${amount["crw"]}',
             style: TextStyle(
               fontSize: 20,
               color: Colors.teal[600],

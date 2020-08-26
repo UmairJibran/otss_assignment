@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:otss_assignment/data/columns.dart';
+import 'package:otss_assignment/model/database_helper.dart';
 import 'package:otss_assignment/model/legend.dart';
 
 class AddNewData extends StatefulWidget {
@@ -10,6 +11,8 @@ class AddNewData extends StatefulWidget {
 }
 
 class _AddNewDataState extends State<AddNewData> {
+  final dbHelper = DatabaseHelper.instance;
+
   final _formKey = new GlobalKey<FormState>();
   int _amount;
   Legend _selectedItem;
@@ -73,18 +76,28 @@ class _AddNewDataState extends State<AddNewData> {
                 },
               ),
               FlatButton(
-                  onPressed: () {
-                    if (_formKey.currentState.validate()) {
-                      setState(() {
-                        _formKey.currentState.reset();
-                      });
-                    }
-                  },
-                  child: Text("Add to Database"))
+                onPressed: () {
+                  if (_formKey.currentState.validate()) {
+                    _insert();
+                    setState(() {
+                      _formKey.currentState.reset();
+                    });
+                  }
+                },
+                child: Text("Add to Database"),
+              )
             ],
           ),
         ),
       ),
     );
+  }
+
+  void _insert() async {
+    Map<String, dynamic> row = {
+      DatabaseHelper.columnType: _selectedItem.col,
+      DatabaseHelper.columnWeight: _amount
+    };
+    await dbHelper.insert(row);
   }
 }

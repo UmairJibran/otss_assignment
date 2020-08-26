@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:otss_assignment/data/amount.dart';
 
 class G2G3 extends StatelessWidget {
   @override
@@ -24,17 +25,17 @@ class G2G3 extends StatelessWidget {
             maxFontSize: 10.0,
           ),
           SizedBox(height: 5),
-          AutoSizeText(
-            "25",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.teal[600],
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          // AutoSizeText(
+          //   "25",
+          //   style: TextStyle(
+          //     fontSize: 20,
+          //     color: Colors.teal[600],
+          //     fontWeight: FontWeight.bold,
+          //   ),
+          // ),
           SizedBox(height: 5),
           AutoSizeText(
-            "500 Tons",
+            '${amount["ue"]} Tons',
             style: TextStyle(
               fontSize: 12,
               color: Colors.teal[600],

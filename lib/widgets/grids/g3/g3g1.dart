@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:otss_assignment/data/amount.dart';
 
 class G3G1 extends StatelessWidget {
   @override
@@ -25,7 +26,7 @@ class G3G1 extends StatelessWidget {
           ),
           SizedBox(height: 5),
           AutoSizeText(
-            "3145 Tons",
+            '${amount["dsaw"]} Tons',
             style: TextStyle(
               fontSize: 12,
               color: Colors.teal[600],

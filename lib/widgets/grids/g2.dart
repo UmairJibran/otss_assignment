@@ -21,7 +21,7 @@ class ContainersAtPort extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 15),
+        SizedBox(height: 35),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,

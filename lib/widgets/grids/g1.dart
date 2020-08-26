@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:otss_assignment/data/amount.dart';
 import '../grid_template.dart';
 
 class ContainersOnShip extends StatelessWidget {
@@ -26,17 +27,17 @@ class ContainersOnShip extends StatelessWidget {
               ),
             ),
             SizedBox(height: 5),
-            Text(
-              "127",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.teal[600],
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            // Text(
+            //   "127",
+            //   style: TextStyle(
+            //     fontSize: 20,
+            //     color: Colors.teal[600],
+            //     fontWeight: FontWeight.bold,
+            //   ),
+            // ),
             SizedBox(height: 5),
             Text(
-              "3268 Tons",
+              "${amount["cos"].toString()} Tons",
               style: TextStyle(
                 fontSize: 12,
                 color: Colors.teal[600],
