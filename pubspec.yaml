@@ -30,13 +30,10 @@ dependencies:
   auto_size_text: ^2.1.0
   hawk_fab_menu: ^0.3.2
   flutter_svg: ^0.18.1
-  moor_flutter: ^3.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  moor_generator: ^3.3.1
-  build_runner: ^1.10.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
