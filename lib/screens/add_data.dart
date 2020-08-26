@@ -59,6 +59,7 @@ class _AddNewDataState extends State<AddNewData> {
                 }).toList(),
               ),
               TextFormField(
+                initialValue: _amount.toString(),
                 keyboardType: TextInputType.number,
                 validator: (value) {
                   return inputValidator(value);
@@ -67,7 +68,6 @@ class _AddNewDataState extends State<AddNewData> {
                   setState(
                     () {
                       _amount = int.parse(value);
-                      print(_amount.toString());
                     },
                   )
                 },
@@ -75,7 +75,9 @@ class _AddNewDataState extends State<AddNewData> {
               FlatButton(
                   onPressed: () {
                     if (_formKey.currentState.validate()) {
-                      print("adding data for ${_selectedItem.col}");
+                      setState(() {
+                        _formKey.currentState.reset();
+                      });
                     }
                   },
                   child: Text("Add to Database"))
